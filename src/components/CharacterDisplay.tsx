@@ -57,7 +57,7 @@ export default function CharacterDisplay({ selectedMood }: CharacterDisplayProps
           {bubble && (
             <div style={{
               position: 'absolute',
-              top: 0,
+              top: 20,
               right: -10,
               background: selectedMood.badgeColor,
               borderRadius: '18px 18px 18px 4px',
