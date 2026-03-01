@@ -84,7 +84,10 @@
   }
 
   .logo-img {
-    height: 60px; object-fit: contain; margin-bottom: 4px;
+    height: 150px;
+    width: 200px;
+    margin-top: -100px;
+    object-fit: cover;
   }
 
   .tagline {
@@ -233,10 +236,10 @@
 
   function dismissLoader() {
     loader.classList.add('fade-out');
-    setTimeout(() => loader.style.display = 'none', 2000);
+    setTimeout(() => loader.style.display = 'none', 4000);
   }
 
-  const minDelay = new Promise(resolve => setTimeout(resolve, 2500));
+  const minDelay = new Promise(resolve => setTimeout(resolve, 4000));
   const pageLoad = new Promise(resolve => {
     if (document.readyState === 'complete') resolve();
     else window.addEventListener('load', resolve);
